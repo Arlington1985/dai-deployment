@@ -12,7 +12,7 @@ The project is inteded to deploy Driverless AI product to AWS. No preconfigurati
 * ssh_key_path. Default is `"~/.ssh/id_rsa"`
 
 ### Default parameters
-All default parameters is stored in `terraform.tfvars` file. You can also specify these parameters during `terraform apply` operation by specifying `-var instance_type=m5a.2xlarge`. If you also want make `Access key` and `Secret key` default, just create `secrets.tfvars` file in the `terraform` folder, add following content and specify you Access key and Secret key in the file
+All default parameters is stored in `terraform/terraform.tfvars` file. You can also specify these parameters during `terraform apply` operation by specifying `-var instance_type=m5a.2xlarge`. If you also want make `Access key` and `Secret key` default, just create `terraform/secrets.tfvars` file, add following content and specify you Access key and Secret key in the file
 
 ```
 access_key = "YOUR AWS ACCESS KEY"
