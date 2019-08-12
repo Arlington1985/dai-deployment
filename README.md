@@ -17,7 +17,7 @@ The project is inteded to deploy Driverless AI product to AWS. No preconfigurati
 * config_file. Default is empty. Optionally you can specify path to `config.toml` in you local machine. It will replace application config file before launch. 
 
 ### Default parameters
-All default parameters is stored in `terraform.tfvars` file. You can also specify these parameters during `terraform apply` operation by specifying `-var instance_type=m5a.2xlarge`. If you also want make `Access key` and `Secret key` default, just create `secrets.tfvars` file in the `terraform` folder, add following content and specify you Access key and Secret key in the file
+All default parameters is stored in `terraform/terraform.tfvars` file. You can also specify these parameters during `terraform apply` operation by specifying `-var instance_type=m5a.2xlarge`. If you also want make `Access key` and `Secret key` default, just create `terraform/secrets.tfvars` file, add following content and specify you Access key and Secret key in the file
 
 ```
 access_key = "YOUR AWS ACCESS KEY"
