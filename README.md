@@ -42,3 +42,8 @@ Execute following actions:
 * `terrafor apply` - Will do the actual magic. Check _Input parameters_ section for specifying input values.
 
 After successful execution of all commands you can access to application with `http://PUBLOC_IP_ADDRESS:12345`
+
+
+## TODO
+* Add validation of input variables. Terraform doesn't have any functionality to provide such validation out of the box. There is some workaround but at the end you can't build complex validation because different major minor versions depend on different version of CUDA and CUDNN libraries. My choose is to build command line tool which will execute terraform command after validation.
+* Current functionality only support docker installation with on top of the RHEL OS. But DAI has another options which would be better to include them to this project.
