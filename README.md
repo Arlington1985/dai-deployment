@@ -10,6 +10,11 @@ The project is inteded to deploy Driverless AI product to AWS. No preconfigurati
 * instance_type. Defauilt is `"m5a.2xlarge"`
 * volume_size. Defauilt is `"1000"`
 * ssh_key_path. Default is `"~/.ssh/id_rsa"`
+* major_version. Default is `"1.7.0"`
+* minor_version. Default is `"214"`
+* cuda_version. Default is `"10.0"`
+* cuDNN_version. Default is `"7.6.0.64"`
+* config_file. Default is empty. Optionally you can specify path to `config.toml` in you local machine. It will replace application config file before launch. 
 
 ### Default parameters
 All default parameters is stored in `terraform.tfvars` file. You can also specify these parameters during `terraform apply` operation by specifying `-var instance_type=m5a.2xlarge`. If you also want make `Access key` and `Secret key` default, just create `secrets.tfvars` file in the `terraform` folder, add following content and specify you Access key and Secret key in the file

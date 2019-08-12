@@ -11,6 +11,11 @@ variable "security_group_ids" {}
 variable "instance_type" {}
 variable "volume_size" {}
 variable "ssh_key_path" {}
+variable "major_version" {}
+variable "minor_version" {}
+variable "cuda_version" {}
+variable "cuDNN_version" {}
+variable "config_file" {}
 variable "instance_ami" {
   description = "EC2 instance ami"
   default = "ami-0badcc5b522737046"

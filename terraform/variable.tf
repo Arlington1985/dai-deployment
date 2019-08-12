@@ -15,6 +15,21 @@ variable "volume_size" {
 variable "ssh_key_path" {
   description = "Private SSH key path. Relevant public key also should be located in the same path. Will be used to detect public also the public key by adding .pub to the end of the file "
 }
+variable "major_version" {
+  description = "Major version of application"
+}
+variable "minor_version" {
+  description = "Minor version/Build number of application"
+}
+variable "cuda_version" {
+  description = "Cuda version"  
+}
+variable "cuDNN_version" {
+  description = "CudNN version"  
+}
+variable "config_file" {
+  description = "Custom config.toml file for application"
+}
 variable "region" {
   default = "eu-central-1"
   description = "Region where application will be launched"
